@@ -7,10 +7,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/batu-blog/', 
   plugins: [
     vue(),
     vueDevTools(),
-     tailwindcss(),
+    tailwindcss(),
   ],
   resolve: {
     alias: {

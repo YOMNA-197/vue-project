@@ -77,13 +77,13 @@ import { signOut } from "firebase/auth";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
-// Bonus: user email
+// user email
 const userEmail = ref(auth.currentUser?.email || "");
 
 // router
 const router = useRouter();
 
-// Bonus: logout
+// logout
 const logout = async () => {
   await signOut(auth);
   router.push("/login");
